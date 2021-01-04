@@ -1,10 +1,10 @@
 {
   "name": "@momsfriendlydevco/extract",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extract various types of entity from strings (inclides CLI for STDIN processing)",
   "main": "index.js",
   "bin": {
-    "ruget": "./app.js"
+    "extract": "./app.js"
   },
   "scripts": {
     "test": "mocha"
