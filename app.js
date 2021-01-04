@@ -3,16 +3,20 @@
 var extract = require('.');
 var fs = require('fs');
 var program = require('commander');
+var commanderExtras = require('commander-extras');
 var promiseSeries = require('./lib/promise.series');
 
 program
 	.version(require('./package.json').version)
+	.name('extract')
 	.usage('[--type=TYPE] [files...]')
 	.option('-t, --type [parser]', 'specify a parser type to use (default: "auto")')
 	.option('-f, --files', 'set --type=paths')
 	.option('-p, --paths', 'set --type=paths')
 	.option('-v, --verbose', 'be verbose')
 	.option('-0, --null', 'seperate output using nulls instead of linefeeds')
+	.example('extract --paths someBigFile.any', 'Extact all path-like items from a file')
+	.example('cat someBigFile.any | extract --paths', 'Extact all path-like items from a stream')
 	.parse(process.argv);
 
 if (program.paths) program.type = 'paths';

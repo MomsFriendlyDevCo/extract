@@ -1,8 +1,11 @@
 {
   "name": "@momsfriendlydevco/extract",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Extract various types of entity from strings (inclides CLI for STDIN processing)",
   "main": "index.js",
+  "bin": {
+    "ruget": "./app.js"
+  },
   "scripts": {
     "test": "mocha"
   },
@@ -26,6 +29,7 @@
     "mocha": "^8.2.1"
   },
   "dependencies": {
-    "commander": "^6.2.1"
+    "commander": "^6.2.1",
+    "commander-extras": "^1.1.3"
   }
 }

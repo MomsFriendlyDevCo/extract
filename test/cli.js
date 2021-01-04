@@ -19,7 +19,6 @@ describe('@MomsFriendlyDevCo/Extact (CLI)', async ()=> {
 				prefixStderr: 'ERR>',
 			})
 				.then(output => {
-					console.log('CHK', {testInput, output});
 					expect(output).to.equal(testOutput);
 				})
 		)
