@@ -1,0 +1,3 @@
+prefix ./one suffix
+P ./two.ext SSSS
+XXXX ./three/four.five ZZZZ

@@ -1,0 +1,31 @@
+{
+  "name": "@momsfriendlydevco/extract",
+  "version": "0.0.0",
+  "description": "Extract various types of entity from strings (inclides CLI for STDIN processing)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MomsFriendlyDevCo/extract.git"
+  },
+  "keywords": [
+    "cli",
+    "stidin"
+  ],
+  "author": "Matt Carter <m@ttcarter.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MomsFriendlyDevCo/extract/issues"
+  },
+  "homepage": "https://github.com/MomsFriendlyDevCo/extract#readme",
+  "devDependencies": {
+    "@momsfriendlydevco/exec": "^1.5.2",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "commander": "^6.2.1"
+  }
+}
